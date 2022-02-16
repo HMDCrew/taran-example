@@ -16,11 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
-
 Route::resource('carousels', CarouselController::class);
 Route::resource('partners', PartnersController::class);
 

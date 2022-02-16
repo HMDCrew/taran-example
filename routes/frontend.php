@@ -15,11 +15,6 @@ use App\Http\Controllers\FrontEnd\ContactController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
-Route::get('/', function () {
-    return view('frontend.home');
-});
-*/
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -27,12 +22,3 @@ Route::get('/partner', PartnersController::class)->name('partner');
 
 Route::get('/contact', ContactController::class)->name('contact');
 Route::post('/send', [ContactController::class, 'send_mail'])->name('contact.send');
-
-// SliderController
-
-
-/*
-Route::get('/', function () {
-    return view('welcome');
-});
-*/
