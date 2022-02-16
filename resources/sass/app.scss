@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.carousel-inner .carousel-item img {
+    max-height: 500px;
+    object-fit: cover }
+
+
+
+
+/* Backend */
+.actions {
+    min-width: 210px }
+.shortcode {
+    min-width: 168px }
+
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    height: 300px }
