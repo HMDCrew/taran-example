@@ -17,7 +17,7 @@ class CreatePartnersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('surname');
-            $table->text('description');
+            $table->longText('description');
             $table->string('path_img');
             $table->timestamps();
         });

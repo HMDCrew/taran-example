@@ -17,7 +17,7 @@ class CreateEmailsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->text('description');
+            $table->longText('description');
             $table->timestamps();
         });
     }

@@ -16,8 +16,8 @@ class CreateListsCarousel extends Migration
         Schema::create('lists_carousels', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('description');
-            $table->text('img_path');
+            $table->longText('description');
+            $table->longText('img_path');
             $table->timestamps();
             $table->softDeletes();
         });
